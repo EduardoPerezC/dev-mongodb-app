@@ -10,7 +10,7 @@ function connect(){
 	.catch((error)=>console.error(`could not connect to mongodb`,error))	
 }
 
-app.use(`test`,testRouter)
+app.use('Test',testRouter)
 
 app.listen(port,()=>{
 	console.log(`listening on port ` + port)
