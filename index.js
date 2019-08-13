@@ -10,7 +10,7 @@ function connect(){
 	.catch((error)=>console.error(`could not connect to mongodb`,error))	
 }
 
-app.use(`devapi`,testRouter)
+app.use('devapi',testRouter)
 
 console.log(testRouter)
 
