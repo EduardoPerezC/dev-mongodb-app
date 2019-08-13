@@ -13,6 +13,11 @@ function connect(){
 app.use(`devapi`,testRouter)
 
 console.log(testRouter)
+
+app.get('/',(req,resp)=>{
+	resp.send('Server Running')
+})
+
 app.listen(port,()=>{
 	console.log(`listening on port ` + port)
 })
